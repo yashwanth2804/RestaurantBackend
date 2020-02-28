@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 //var mongoDB = 'mongodb://127.0.0.1/RestaurantsDB';
 //mongodb://<dbuser>:<dbpassword>@ds161894.mlab.com:61894/restaurants_db
-var mongoDB = 'mongodb://yash2804:' + process.env.dbpwd + '@ds161894.mlab.com:61894/restaurants_db;
+var mongoDB = 'mongodb://yash2804:' + process.env.dbpwd + '@ds161894.mlab.com:61894/restaurants_db';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
